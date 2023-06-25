@@ -1,3 +1,85 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('static/fonts/Norse.otf') format('opentype');
+    font-weight: normal;
+    font-style: 300;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('static/fonts/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    min-height: 100vh; 
     display: flex;
+}
+:root {
+    --accent-color: #596D48;
+    --page-background-color: #F9FAFB;
+    --form-background-color: #FFFFFF;
+    --small-print-text-color: #DFDEDE;
+}
+
+.sidebar {
+    background-image: url("static/nature.jpg");
+    color: var(--form-background-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.sidebar__banner {
+    background: rgba(0,0,0,0.7);
+    margin-top: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar__banner__logo {
+    /* margin-left: -100px; */
+    max-width: 200px;
+    height: auto;
+}
+
+.sidebar__banner__text {
+    font-size: 150px;
+    font-family: Norse;
+}
+
+.sidebar__footer {
+    text-align: center;
+    color: var(--small-print-text-color);
+    margin-bottom: 10px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.content {
+    background-color: var(--page-background-color)
+}
+
+.content__body {
+    background-color: var(--form-background-color);
+}
+
+.submit-button {
+    background-color: var(--accent-color);
+    color: var(--form-background-color);
 }
