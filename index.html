@@ -1,80 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Odin Sign up</title>
-  </head>
-  <body>
-    <aside class="sidebar">
-      <div class="sidebar__banner">
-        <img class="sidebar__banner__logo" src="static/logo.png" alt="" />
-        <h1 class="sidebar__banner__text">ODIN</h1>
-      </div>
-      <footer class="sidebar__footer">
-        Photo by <a href="https://unsplash.com/@tuzbro">Goutham Krishna</a> on
-        <a href="https://unsplash.com/photos/h5wvMCdOV3w">upleash</a>
-      </footer>
-    </aside>
-    <article class="content">
-      <header class="content__header">
-        <p class="content__header__text">
-          This is not a real online service! You know you need somethin like
-          this in your life to help you realize your deepest dreams. Sign up
-          <em>now</em> to get started.
-        </p>
-        <p class="content__header__text">You <em>know</em> you want to.</p>
-      </header>
-      <section class="content__body">
-        <p class="content__body__text">Let's do this!</p>
-        <form method="get" action="#" class="content__body__form">
-          <div class="form-input-container">
-            <div class="pair-input-container">
-              <div class="label-input-container">
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" name="first_name" id="first_name" />
-              </div>
-              <div class="label-input-container">
-                <label for="last_name">LAST NAME</label>
-                <input type="text" name="last_name" id="last_name" />
-              </div>
-            </div>
-            <div class="pair-input-container">
-              <div class="label-input-container">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
-              </div>
-              <div class="label-input-container">
-                <label for="phone_number">PHONE NUMBER</label>
-                <input type="tel" name="phone_number" id="phone_number" />
-              </div>
-            </div>
-            <div class="pair-input-container">
-              <div class="label-input-container">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" />
-              </div>
-              <div class="label-input-container">
-                <label for="confirm_password">CONFIRM PASSWORD</label>
-                <input
-                  type="password"
-                  name="confirm_password"
-                  id="confirm_password"
-                />
-              </div>
-            </div>
-          </div>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Odin Sign up</title>
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="sidebar__banner">
+      <img class="sidebar__banner__logo" src="static/logo.png" alt="" />
+      <h1 class="sidebar__banner__text">ODIN</h1>
+    </div>
+    <footer class="sidebar__footer">
+      Photo by <a href="https://unsplash.com/@tuzbro">Goutham Krishna</a> on
+      <a href="https://unsplash.com/photos/h5wvMCdOV3w">upleash</a>
+    </footer>
+  </aside>
+  <article class="content">
+    <header class="content__header">
+      <p class="content__header__text">
+        This is not a real online service! You know you need somethin like
+        this in your life to help you realize your deepest dreams. Sign up
+        <em>now</em> to get started.
+      </p>
+      <p class="content__header__text">You <em>know</em> you want to.</p>
+    </header>
+    <section class="content__body">
+      <p class="content__body__text">Let's do this!</p>
+      <form method="get" action="#" class="content__body__form">
+        <div class="form-input-container">
+          <div class="label-input-container">
+            <label for="first_name">FIRST NAME</label>
+            <input type="text" name="first_name" id="first_name" />
+          </div>
+          <div class="label-input-container">
+            <label for="last_name">LAST NAME</label>
+            <input type="text" name="last_name" id="last_name" />
+          </div>
+          <div class="label-input-container">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="label-input-container">
+            <label for="phone_number">PHONE NUMBER</label>
+            <input type="tel" name="phone_number" id="phone_number" />
+          </div>
+          <div class="label-input-container">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="label-input-container">
+            <label for="confirm_password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm_password" id="confirm_password" />
+          </div>
+        </div>
+
+        <div class="button-pair">
           <input class="submit-button" type="submit" value="Create Account" />
-        </form>
-      </section>
-      <footer class="content__footer">
-        <p class="content__footer__text">
-          Already have an account? <a href="#">Log in</a>
+          <p class="content__footer__text">
+            Already have an account? <a href="#">Log in</a>
+        </div>
         </p>
-      </footer>
-    </article>
-  </body>
+      </form>
+    </section>
+    <footer></footer>
+  </article>
+</body>
+
 </html>
