@@ -125,7 +125,28 @@ body {
 .label-input-container {
   display: flex;
   flex-direction: column;
+  gap: 4px;
   width: clamp(200px, 40%, 45%);
+}
+
+.input-box {
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid #b6b6b6;
+}
+
+
+.input-box:focus {
+  border: 2px solid #6cddff;
+}
+
+.input-box:not(:placeholder-shown):invalid {
+  border: 2px solid #ff6a6a;
+}
+
+.input-box:valid {
+  border: 2px solid #c3ffc3;
 }
 
 .submit-button {
